@@ -5,7 +5,7 @@ const Header = () => {
     <header className="bg-neutral py-2 text-neutral-content">
       <div className="align-elements flex justify-center sm:justify-end">
         <div className="flex gap-x-6 justify-center items-center">
-          <Link className="link link-hover text-xs sm:text-sm" to={"/register"}>
+          <Link className="link link-hover text-xs sm:text-sm" to={"/login"}>
             Sign in / Guest
           </Link>
           <Link className="link link-hover text-xs sm:text-sm" to={"/register"}>
