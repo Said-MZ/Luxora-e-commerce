@@ -1,14 +1,12 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { Header } from "../components";
+import { Header, Navbar } from "../components";
 
 const HomeLayout = () => {
   return (
     <>
       <Header />
-      <nav>
-        <span className="text-4xl text-primary">Loxura</span>
-      </nav>
+      <Navbar />
       <section className="align-elements py-20">
         <Outlet />
       </section>
