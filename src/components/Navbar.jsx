@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="navbar-start">
           <NavLink
             to="/"
-            className="hidden lg:flex btn btn-primary items-center text-3xl btn-circle"
+            className="hidden lg:flex btn bg-base-content text-base-100 hover:text-base-content items-center jus text-3xl btn-circle"
           >
             L
           </NavLink>
@@ -49,7 +49,7 @@ const Navbar = () => {
         <div className="navbar-center ">
           <NavLink
             to="/"
-            className="lg:hidden btn btn-primary items-center text-3xl btn-circle"
+            className="lg:hidden btn bg-base-content text-base-100 hover:text-base-content items-center jus text-3xl btn-circle"
           >
             L
           </NavLink>
