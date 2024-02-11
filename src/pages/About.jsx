@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="text-secondary-content">
+    <section className="text-secondary-content tracking-wide leading-8">
       <div className="bg-base-content absolute shadow-2xl blur-[8rem] shadow-base-content -z-10 rounded-full opacity-25 w-[30rem] h-[30rem] top-0 -right-96 "></div>
       <div className="bg-base-content absolute shadow-2xl blur-[8rem] shadow-base-content -z-10 rounded-full opacity-25 w-[30rem] h-[30rem] -bottom-2 -left-96 "></div>
       <div className="bg-base-content absolute shadow-2xl blur-[10rem] shadow-base-content -z-10 rounded-full opacity-25 w-96 h-96 -bottom-[38rem] -right-80 md:-bottom-72 md:right-52 "></div>
@@ -56,7 +56,7 @@ const About = () => {
         services. We are committed to providing the best customer service and
         making sure our customers are satisfied with their purchase.
       </p>
-    </div>
+    </section>
   );
 };
 
