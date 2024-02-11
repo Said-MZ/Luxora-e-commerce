@@ -1,3 +1,3 @@
 import FormInput from "./FormInput";
-
-export { FormInput };
+import SubmitBtn from "./SubmitBtn";
+export { FormInput, SubmitBtn };
