@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLoaderData } from "react-router-dom";
+import { formatPrice } from "../utils";
 const ProductsGrid = () => {
   const { products } = useLoaderData();
   return (
@@ -24,7 +25,7 @@ const ProductsGrid = () => {
               <h2 className="text-xl capitalize font-bold text-center text-primary">
                 {title}
               </h2>
-              <p className="text-center">${price / 100}</p>
+              <p className="text-center">{formatPrice(price)}</p>
             </div>
           </Link>
         );
