@@ -1,9 +1,7 @@
 import React from "react";
-import { Hero } from "../components";
+import { FeaturedProducts, Hero } from "../components";
 import { customFetch } from "../utils";
 const url = "/products?featured=true";
-
-// get products with axios
 
 export const loader = async () => {
   const response = await customFetch(url);
@@ -15,6 +13,7 @@ const Landing = () => {
   return (
     <>
       <Hero />
+      <FeaturedProducts />
     </>
   );
 };
