@@ -21,7 +21,7 @@ const ProductsContainer = () => {
         <div className="flex gap-x-2">
           <button
             onClick={() => toggleActiveStyle("grid")}
-            className={`btn btn-circle ${
+            className={`hidden md:flex btn btn-circle ${
               activeStyle === "grid" ? "btn-neutral" : "btn-ghost"
             }`}
           >
@@ -30,7 +30,7 @@ const ProductsContainer = () => {
 
           <button
             onClick={() => toggleActiveStyle("cols")}
-            className={`btn btn-circle ${
+            className={`hidden md:flex btn btn-circle ${
               activeStyle !== "grid" ? "btn-neutral" : "btn-ghost"
             }`}
           >
@@ -38,7 +38,7 @@ const ProductsContainer = () => {
           </button>
         </div>
       </div>
-      <div>
+      <div className="pt-12">
         {totalProducts === 0 ? (
           <h5 className="text-2xl mt-16">
             Sorry, no products matched your search...
