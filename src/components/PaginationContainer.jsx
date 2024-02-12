@@ -37,16 +37,19 @@ const PaginationContainer = () => {
             className={`btn btn-sm sm:btn-md join-item ${
               pageNumber === page ? "btn-neutral" : ""
             }`}
-            onClick={() => {
-              let nextPage = page + 1;
-              if (nextPage > pageCount) nextPage = 1;
-              handlePageChange(nextPage);
-            }}
+            onClick={() => handlePageChange(pageNumber)}
           >
             {pageNumber}
           </button>
         ))}
-        <button className="btn btn-sm sm:btn-md join-item " onClick={() => {}}>
+        <button
+          className="btn btn-sm sm:btn-md join-item "
+          onClick={() => {
+            let nextPage = page + 1;
+            if (nextPage > pageCount) nextPage = 1;
+            handlePageChange(nextPage);
+          }}
+        >
           ❯
         </button>
       </div>
