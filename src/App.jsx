@@ -16,6 +16,7 @@ import {
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import { loader as LandingLoader } from "./pages/Landing";
+import { loader as SingleProductLoader } from "./pages/SingleProduct";
 
 const router = createBrowserRouter([
   {
@@ -33,7 +34,11 @@ const router = createBrowserRouter([
       { path: "cart", element: <Cart /> },
       { path: "checkout", element: <Checkout /> },
       { path: "products", element: <Products /> },
-      { path: "products/:id", element: <SingleProduct /> },
+      {
+        path: "products/:id",
+        element: <SingleProduct />,
+        loader: SingleProductLoader,
+      },
       { path: "orders", element: <Orders /> },
     ],
   },
