@@ -12,13 +12,13 @@ const About = () => {
           //glow text
           className="px-1 text-base-content glow-gold"
         >
-          Luxora{" "}
+          Luxoria{" "}
         </span>
         Store
       </h1>
       <div className="divider mb-8"></div>
       <p className="mb-5">
-        Luxora Store is a modern e-commerce store that sells a variety of
+        Luxoria Store is a modern e-commerce store that sells a variety of
         products. We are dedicated to providing our customers with the best
         products and services. We are committed to providing the best customer
         service and making sure our customers are satisfied with their purchase.

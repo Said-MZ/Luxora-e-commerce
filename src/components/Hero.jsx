@@ -101,13 +101,13 @@ const Hero = () => {
           to You
         </h1>
         <p className="text-justify mt-5 text-sm sm:text-lg text-secondary-content leading-6 tracking-wide">
-          At Luxora, excellence is not just a standard—it's a way of life. As
+          At Luxoria, excellence is not just a standard—it's a way of life. As
           purveyors of luxury living, we curate the finest products and provide
           unparalleled service to ensure that every aspect of your experience
           with us is nothing short of exceptional. From elegant furnishings to
           exquisite décor, we offer a meticulously curated collection that
           reflects our dedication to quality and sophistication. With a
-          commitment to excellence at our core, Luxora is where discerning
+          commitment to excellence at our core, Luxoria is where discerning
           individuals turn to elevate their lifestyle and indulge in the epitome
           of luxury.
         </p>
