@@ -1,9 +1,23 @@
-import React from 'react'
-
+import React from "react";
+import { customFetch } from "../utils";
+import Filter from "../components/Filter";
+import ProductsContainer from "../components/ProductsContainer";
+import PaginationContainer from "../components/PaginationContainer";
+const url = "/products";
+export const loader = async () => {
+  const response = await customFetch(url);
+  const products = response.data.data;
+  const meta = response.data.meta;
+  return { products, meta };
+};
 const Products = () => {
   return (
-    <div>Products</div>
-  )
-}
+    <>
+      <Filter />
+      <ProductsContainer />
+      <PaginationContainer />
+    </>
+  );
+};
 
-export default Products
+export default Products;

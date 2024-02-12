@@ -93,7 +93,7 @@ const Hero = () => {
       <section className="mt-96 sm:mt-[40rem] text-primary text-center">
         <h1
           className="
-        text-2xl font-bold text-center sm:text-4xl tracking-wide 
+        text-xl font-bold text-center sm:text-4xl tracking-wide 
         "
         >
           <span className="glow-gold text-base-content">Luxury </span>
@@ -117,7 +117,6 @@ const Hero = () => {
         >
           Shop Now
         </Link>
-        <div className="divider"></div>
       </section>
     </>
   );
