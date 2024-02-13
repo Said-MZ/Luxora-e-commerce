@@ -7,6 +7,8 @@ import ErrorElement from "./ErrorElement";
 import FeaturedProducts from "./FeaturedProducts";
 import SectionTitle from "./SectionTitle";
 import ProductsGrid from "./ProductsGrid";
+import CartItemsList from "./CartItemsList";
+import CartTotal from "./CartTotal";
 export {
   FormInput,
   SubmitBtn,
@@ -17,4 +19,6 @@ export {
   FeaturedProducts,
   SectionTitle,
   ProductsGrid,
+  CartItemsList,
+  CartTotal,
 };

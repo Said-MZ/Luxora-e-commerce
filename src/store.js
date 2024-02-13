@@ -3,6 +3,6 @@ import cartReducer from "./features/cart/cartSlice";
 
 export const store = configureStore({
   reducer: {
-    carState: cartReducer,
+    cartState: cartReducer,
   },
 });
