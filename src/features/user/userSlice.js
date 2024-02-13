@@ -6,13 +6,20 @@ const themes = {
   nord: "nord",
 };
 
+const getUserFromLocalStorage = () => {
+  return JSON.parse(localStorage.getItem("user")) || null;
+};
+
 const getThemeFromLocalStorage = () => {
   const theme = localStorage.getItem("theme") || themes.winter;
   document.documentElement.setAttribute("data-theme", theme);
   return theme;
 };
 
-const initalState = { username: "said-mz", theme: getThemeFromLocalStorage() };
+const initalState = {
+  username: getUserFromLocalStorage(),
+  theme: getThemeFromLocalStorage(),
+};
 
 const userSlice = createSlice({
   name: "user",
