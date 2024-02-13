@@ -1,7 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initalState = { username: "said-mz", theme: "luxury" };
-
 const themes = {
   luxury: "luxury",
   nord: "nord",
@@ -12,6 +10,8 @@ const getThemeFromLocalStorage = () => {
   document.documentElement.setAttribute("data-theme", theme);
   return theme;
 };
+
+const initalState = { username: "said-mz", theme: getThemeFromLocalStorage() };
 
 const userSlice = createSlice({
   name: "user",
