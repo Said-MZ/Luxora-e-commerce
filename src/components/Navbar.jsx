@@ -1,29 +1,14 @@
-import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { BsCart3, BsMoonFill, BsSunFill } from "react-icons/bs";
 import NavLinks from "./NavLinks";
-import { useSelector } from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
+import { toggleTheme } from "../features/user/userSlice";
 const Navbar = () => {
-  const themes = {
-    luxury: "luxury",
-    nord: "nord",
+  const dispatch = useDispatch();
+  const handleTheme = () => {
+    dispatch(toggleTheme());
   };
-  const getTheme = () => {
-    const theme = localStorage.getItem("theme");
-    return theme || themes.luxury;
-  };
-
-  const [theme, setTheme] = useState(getTheme());
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === themes.luxury ? themes.nord : themes.luxury));
-  };
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
   const numItemsInCart = useSelector((state) => state.cartState.numItemsInCart);
   return (
     <nav className="bg-base-200">
@@ -61,7 +46,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <label className="swap swap-rotate">
-            <input type="checkbox" onChange={toggleTheme} />
+            <input type="checkbox" onChange={handleTheme} />
             <BsSunFill className="swap-on h-4 w-4 " />
             <BsMoonFill className="swap-off h-4 w-4 " />
           </label>

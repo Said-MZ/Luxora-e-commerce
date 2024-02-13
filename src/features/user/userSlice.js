@@ -1,4 +1,17 @@
+import { createSlice } from "@reduxjs/toolkit";
+
 const initalState = { username: "said-mz", theme: "luxury" };
+
+const themes = {
+  luxury: "luxury",
+  nord: "nord",
+};
+
+const getThemeFromLocalStorage = () => {
+  const theme = localStorage.getItem("theme") || themes.winter;
+  document.documentElement.setAttribute("data-theme", theme);
+  return theme;
+};
 
 const userSlice = createSlice({
   name: "user",
@@ -11,7 +24,11 @@ const userSlice = createSlice({
       console.log("logout");
     },
     toggleTheme: (state) => {
-      console.log("toggle theme");
+      const newTheme =
+        state.theme === themes.luxury ? themes.nord : themes.luxury;
+      localStorage.setItem("theme", newTheme);
+      document.documentElement.setAttribute("data-theme", newTheme);
+      state.theme = newTheme;
     },
   },
 });
