@@ -22,7 +22,7 @@ const CartItem = ({ cartItem }) => {
       <img
         src={image}
         alt={title}
-        className="sm:h-full m-4 sm:p-0 rounded-md sm:rounded-tr-none sm:rounded-br-none w-24 rounded-tl-lg rounded-bl-lg h-24 sm:w-32 object-cover"
+        className="sm:h-full m-4 sm:m-0 rounded-md sm:rounded-tr-none sm:rounded-br-none w-24 rounded-tl-lg rounded-bl-lg h-24 sm:w-32 object-cover"
       />
       <div className="sm:ml-16 sm:w-48 p-4">
         <h3 className="capitalize font-medium">{title}</h3>
