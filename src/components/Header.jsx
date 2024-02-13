@@ -7,7 +7,7 @@ import { logoutUser } from "../features/user/userSlice";
 const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const user = useSelector((state) => state.userState.username);
+  const user = useSelector((state) => state.userState.user?.username);
   const handleLogout = () => {
     navigate("/");
     dispatch(clearCart());
