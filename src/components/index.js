@@ -9,6 +9,7 @@ import SectionTitle from "./SectionTitle";
 import ProductsGrid from "./ProductsGrid";
 import CartItemsList from "./CartItemsList";
 import CartTotal from "./CartTotal";
+import CheckoutForm from "./CheckoutForm";
 export {
   FormInput,
   SubmitBtn,
@@ -21,4 +22,5 @@ export {
   ProductsGrid,
   CartItemsList,
   CartTotal,
+  CheckoutForm,
 };
