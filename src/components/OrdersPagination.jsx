@@ -42,8 +42,6 @@ const OrdersPagination = () => {
 
     if (page !== 1 && page !== pageCount) {
       pageButtons.push(addPageButton({ pageNumber: page, activeClass: true }));
-      pageButtons.push(addPageButton({ pageNumber: page + 1 }));
-      pageButtons.push(addPageButton({ pageNumber: page + 2 }));
     }
 
     if (pageCount > 2) {
