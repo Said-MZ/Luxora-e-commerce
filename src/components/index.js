@@ -10,6 +10,9 @@ import ProductsGrid from "./ProductsGrid";
 import CartItemsList from "./CartItemsList";
 import CartTotal from "./CartTotal";
 import CheckoutForm from "./CheckoutForm";
+import OrdersList from "../components/OrdersList";
+import PaginationContainer from "./PaginationContainer";
+
 export {
   FormInput,
   SubmitBtn,
@@ -23,4 +26,6 @@ export {
   CartItemsList,
   CartTotal,
   CheckoutForm,
+  OrdersList,
+  PaginationContainer,
 };
