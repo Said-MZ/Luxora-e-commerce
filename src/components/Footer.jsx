@@ -79,17 +79,17 @@ const Footer = () => {
           <div className="divider max-w-[90%]"></div>
           <ul>
             <li className="mt-2 text-primary hover:text-base-content text-lg transition duration-300 pb-2">
-              <a href="https://twitter.com/luxoria" target="_blank">
+              <a href="/" target="_blank">
                 Twitter
               </a>
             </li>
             <li className="mt-2 text-primary hover:text-base-content text-lg transition duration-300 pb-2">
-              <a href="https://facebook.com/luxoria" target="_blank">
+              <a href="/" target="_blank">
                 Facebook
               </a>
             </li>
             <li className="mt-2 text-primary hover:text-base-content text-lg transition duration-300 pb-2">
-              <a href="https://instagram.com/luxoria" target="_blank">
+              <a href="/" target="_blank">
                 Instagram
               </a>
             </li>
