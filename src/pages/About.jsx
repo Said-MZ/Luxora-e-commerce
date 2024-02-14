@@ -1,16 +1,19 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const About = () => {
+  const theme = useSelector((state) => state.userState.theme);
   return (
     <section className="text-secondary-content tracking-wide leading-8">
-      {/* <div className="bg-base-content absolute shadow-2xl blur-[8rem] shadow-base-content -z-10 rounded-full opacity-25 w-[30rem] h-[30rem] top-0 -right-96 "></div>
-      <div className="bg-base-content absolute shadow-2xl blur-[8rem] shadow-base-content -z-10 rounded-full opacity-25 w-[30rem] h-[30rem] -bottom-2 -left-96 "></div>
-      <div className="bg-base-content absolute shadow-2xl blur-[10rem] shadow-base-content -z-10 rounded-full opacity-25 w-96 h-96 -bottom-[38rem] -right-80 md:-bottom-72 md:right-52 "></div> */}
+      <div className="bg-base-content absolute shadow-2xl blur-3xl shadow-base-content -z-10 rounded-full opacity-50 w-96 h-96 top-0 -right-96 "></div>
+      <div className="bg-base-content absolute shadow-2xl blur-3xl shadow-base-content -z-10 rounded-full opacity-50 w-96 h-96 -bottom-2 -left-96 "></div>
+      <div className="bg-base-content absolute shadow-2xl blur-3xl shadow-base-content -z-10 rounded-full opacity-10 w-96 h-96 -bottom-[38rem] -right-80 md:-bottom-72 md:right-52 "></div>
       <h1 className="text-3xl font-bold mb-5 text-primary">
         About{" "}
         <span
-          //glow text
-          className="px-1 text-base-content glow-gold"
+          className={`px-1 text-base-content ${
+            theme === "luxury" && "glow-gold"
+          }  `}
         >
           Luxoria{" "}
         </span>

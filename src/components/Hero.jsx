@@ -4,8 +4,10 @@ import hero2 from "../assets/hero2.webp";
 import hero3 from "../assets/hero3.webp";
 import hero4 from "../assets/hero4.webp";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Hero = () => {
+  const theme = useSelector((state) => state.userState.theme);
   return (
     <>
       <div className="carousel absolute left-0 -mt-20 w-screen max-h-96 sm:max-h-[40rem]">
@@ -96,8 +98,17 @@ const Hero = () => {
         text-xl font-bold text-center sm:text-4xl tracking-wide 
         "
         >
-          <span className="glow-gold text-base-content">Luxury </span>
-          Living, <span className="glow-gold text-base-content">Tailored </span>
+          <span
+            className={`${theme === "luxury" && "glow-gold"} text-base-content`}
+          >
+            Luxury{" "}
+          </span>
+          Living,{" "}
+          <span
+            className={`${theme === "luxury" && "glow-gold"} text-base-content`}
+          >
+            Tailored{" "}
+          </span>
           to You
         </h1>
         <p className="text-justify mt-5 text-sm sm:text-lg text-secondary-content leading-6 tracking-wide">
